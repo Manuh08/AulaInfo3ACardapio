@@ -57,7 +57,7 @@ td{
     padding: 1rem;
     border-radius: 1rem;
     color: white;
-    background-color: rgb(199, 10, 10);
+    background-color: rgb(240, 38, 38);
 }
 img{
     width: 300px;
@@ -74,7 +74,7 @@ button{
     border-radius: 1rem;
     border: none;
     color: white;
-    background-color: rgb(199, 10, 10);
+    background-color: rgb(204, 59, 59);
     padding: 1rem;
 }
 button:hover{

@@ -54,7 +54,6 @@ export default function App() {
     ]);
     
     const [listaPedidos, setPedidos] = useState([]);
-
     const adicionarProdutoPedido = (produto) => {  
         setPedidos([...listaPedidos, produto]);
     }
@@ -75,9 +74,27 @@ export default function App() {
             </div>
             <div className="bloco-pedidos">
                  <p>Meus Pedidos</p>
+
+                 <table>
+                <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                </tr>
+
                    { 
-                        
+                      listaPedidos.map((produto)=>
+                        <tr key={produto.id}>
+                            <table>
+                                <tr>
+                                <td><p>{produto.item}</p></td>
+                                <td><p>{produto.preco}</p></td>
+                                </tr>
+                            </table>
+                            
+                            </tr>
+                        )  
                    }
+                   </table>
             </div>
         </div>
     );
